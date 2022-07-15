@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center> 
+<h1>Login Page</h1>
+<form method="post" action"  ">
+<br>
+UserName:<input type="text" name="name">
+<br>
+Password:<input type="text" name="password">
+</form>
+<button onclick="myFunction()" class="mainBtn">Button</button>
+<p>You Have logged in</p>
+<p id="demo"></p>
+<p>Times in this session</p>
+</center>
+    <script>
+      let count = 0;
+      function myFunction() {
+        count++;
+        document.getElementById("demo").innerHTML = count;
+      }
+    </script>
+</body>
+</html>
